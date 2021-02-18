@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/style/main.css">
+        <!-- owlcarousel css -->
+        <link rel="stylesheet" href="src/style/plugin/owlCarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="src/style/plugin/owlCarousel/owl.theme.default.min.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="src/style/responsive.css">
+        <!-- info modal popup css -->
+        <link rel="stylesheet" href="src/style/info.css">
+
+        <title>NETFLIX CLONE</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h2 class="logo">NETFLIX</h2>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="movie">
+                <div class="container">
+                    <h3 class="title">THE MANDALORIAN</h3>
+                    <p class="synopsis">A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, 
+                        viajando pelos territórios esquecidos e marginais do espaço, logo após a queda
+                        do Império e antes da criação da temida Primeira Ordem.
+                    </p>
+                    <div class="buttons">
+                        <button role="button" class="button">
+                            <i class="fas fa-play-circle"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="button" id="infoBtn">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="infoModal" class="modal">
+            <div class="container">
+                <div class="header">
+                    <span class="closeBtn">&times;</span>
+                    <h3 class="title">THE MANDALORIAN (2019)</h3>
+                    <p class="subtitle">A caça de recompensas é uma profissão complicada.</p>  
+                </div>
+                <div class="content">
+                    <p class="note">Gênero: Ação, Aventura e Ficção Científica - 35 minutos</p>
+                    <p class="note">Classificação: 14 anos</p>
+                    <p class="note">Países de Origem: EUA</p>
+                    <p class="note">Dirigido por: Rick Famuyiwa e Carl Weathers</p>
+                    <p class="memo">Sinopse: Cinco anos após a queda do Império Galáctico e antes da criação da temida Primeira Ordem, The Mandalorian, um pistoleiro solitário e caçador de recompensas, viaja pelas terras mais remotas do espaço, em busca de tudo aquilo que seus clientes pedem.</p>
+                </div>
+                <div class="icons">
+                    <button><i class="far fa-list-alt"></i></button>
+                    <button><i class="far fa-heart"></i></button>
+                    <button><i class="far fa-bookmark"></i></button>
+                    <button><i class="far fa-star"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="movie-box" src="src/img/cover01.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover02.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover03.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover04.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover05.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover06.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover07.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover08.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover09.jpg" alt=""></div>
+                <div class="item"><img class="movie-box" src="src/img/cover10.jpg" alt=""></div>
+            </div>
+        </div>
+    
+        <script src="https://kit.fontawesome.com/a3f79d6759.js" crossorigin="anonymous"></script>
+        <!-- owlcarousel js -->
+        <script src="src/js/plugin/owlCarousel/jquery.min.js"></script>
+        <script src="src/js/plugin/owlCarousel/owl.carousel.min.js"></script>
+        <script src="src/js/plugin/owlCarousel/setup.js"></script>
+        <!-- info modal popup js -->
+        <script src="src/js/info.js"></script>
+
+    </body>
+</html>
