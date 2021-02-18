@@ -1,0 +1,110 @@
+:root {
+    --color-black: #141414;
+    --color-gray: #AAA;
+    --color-red: #E50914;
+    --color-white: #FFF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-white);
+}
+
+/* header */
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--color-red);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-gray);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--color-white);
+}
+
+/* movie */
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)100%), url('/src/img/background.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+.movie .container {
+    margin-left: 5px;
+    margin-right: 5px;
+/*    width: 70%; */
+}
+
+.movie .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.movie .synopsis {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.movie .button {
+    background-color: rgba(0,0,0,.25);
+    border: none;
+    color: var(--color-white);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.movie .button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.movie .buttons {
+    align-items: center;
+}
+
+.movie .button i {
+    margin-right: 5px;
+}
+
+.movie-box {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel {
+    margin-top: 5px;
+}
